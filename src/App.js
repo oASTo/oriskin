@@ -1,25 +1,27 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import logo from "./logo.svg";
+import oriskinlogo from "./oriskin-logo.png";
+import "./App.css";
+import BookingCodeInput from "./Booking/BookingCodeInput.js";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <div className="desc-flex">
+          <div className="Desc">
+            <img src={oriskinlogo} alt="oriskin logo" />
+            <br />
+            Use <br />
+            the <b>SCANNER</b> <br />
+            for easy Check-in
+          </div>
+        </div>
+        <div className="book-flex">
+          <BookingCodeInput />
+        </div>
+      </div>
+    </>
   );
 }
 
