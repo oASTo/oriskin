@@ -18,7 +18,7 @@ export default class BookingCodeInput extends Component {
       this.backspace()
     }
 
-    if (button === "Print") {
+    else if (button === "Print") {
       this.print();
     } 
     

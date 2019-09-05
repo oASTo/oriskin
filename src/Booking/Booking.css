@@ -12,6 +12,7 @@
 }
 
 .ButtonSquare-black {
+  font-size: 24px;
   padding: 3%;
   align-content: center;
   flex-wrap: wrap;

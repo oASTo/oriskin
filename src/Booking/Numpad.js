@@ -21,7 +21,7 @@ export default function Numpad(props){
         </div>
         <div style={{flexDirection:"row"}}>
         <button name="<" className="ButtonSquare-black" onClick={e=> props.onClick(e.target.name)}>&lt;</button>
-        <button name="0" className="ButtonSquare-black" onClick={e=> props.onClick(e.target.name)}>"0"</button>
+        <button name="0" className="ButtonSquare-Roundd" onClick={e=> props.onClick(e.target.name)}>0</button>
         <button name="Print" className="ButtonSquare-black" onClick={e=> props.onClick(e.target.name)}>Print</button>
         </div>
     </div>
