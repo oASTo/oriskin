@@ -31,7 +31,7 @@ export default class BookingCodeInput extends Component {
   };
 
   print = () => {
-    console.log("print masuk eko");
+    console.log("print eko");
   };
 
   backspace = () => {
