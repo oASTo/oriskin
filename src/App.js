@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "./logo.svg";
 import oriskinlogo from "./oriskin-logo.png";
 import "./App.css";
 import BookingCodeInput from "./Booking/BookingCodeInput.js";

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import "./Booking.css";
 
 export default function Button(props) {
@@ -12,6 +12,9 @@ export default function Button(props) {
             ? "ButtonSquare-black"
             : "Button"
         }
+
+        onClick={e => this.props.clickhandle(e.target.title)}
+        
       >
         <div
           className={

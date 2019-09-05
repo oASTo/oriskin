@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Button from './Button';
 
-export default function Numpad(){
+export default function Numpad(props){
     return(
         <div style={{flexDirection:'column',flex:1}}>
         <div style={{flexDirection:"row"}}>
-        <Button title="1"/>
+        <Button title="1" />
         <Button title="2"/>
         <Button title="3"/>
         </div>
