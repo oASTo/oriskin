@@ -5,24 +5,24 @@ export default function Numpad(props){
     return(
         <div style={{flexDirection:'column',flex:1}}>
         <div style={{flexDirection:"row"}}>
-        <Button title="1" />
-        <Button title="2"/>
-        <Button title="3"/>
+        <button name="1" className="ButtonSquare-Roundd" onClick={e=> props.onClick(e.target.name)}>1</button>
+        <button name="2" className="ButtonSquare-Roundd" onClick={e=> props.onClick(e.target.name)}>2</button>
+        <button name="3" className="ButtonSquare-Roundd" onClick={e=> props.onClick(e.target.name)}>3</button>
         </div>
         <div style={{flexDirection:"row"}}>
-        <Button title="4"/>
-        <Button title="5"/>
-        <Button title="6"/>
+        <button name="4" className="ButtonSquare-Roundd" onClick={e=> props.onClick(e.target.name)}>4</button>
+        <button name="5" className="ButtonSquare-Roundd" onClick={e=> props.onClick(e.target.name)}>5</button>
+        <button name="6" className="ButtonSquare-Roundd" onClick={e=> props.onClick(e.target.name)}>6</button>
         </div>
         <div style={{flexDirection:"row"}}>
-        <Button title="7"/>
-        <Button title="8"/>
-        <Button title="9"/>
+        <button name="7" className="ButtonSquare-Roundd" onClick={e=> props.onClick(e.target.name)}>7</button>
+        <button name="8" className="ButtonSquare-Roundd" onClick={e=> props.onClick(e.target.name)}>8</button>
+        <button name="9" className="ButtonSquare-Roundd" onClick={e=> props.onClick(e.target.name)}>9</button>
         </div>
         <div style={{flexDirection:"row"}}>
-        <Button title="<"/>
-        <Button title="0"/>
-        <Button title="Print"/>
+        <button name="<" className="ButtonSquare-black" onClick={e=> props.onClick(e.target.name)}>&lt;</button>
+        <button name="0" className="ButtonSquare-black" onClick={e=> props.onClick(e.target.name)}>"0"</button>
+        <button name="Print" className="ButtonSquare-black" onClick={e=> props.onClick(e.target.name)}>Print</button>
         </div>
     </div>
 

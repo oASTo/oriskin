@@ -4,72 +4,92 @@ import Button from "./Button";
 import Numpad from "./Numpad";
 
 export default class BookingCodeInput extends Component {
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
-      code:""
-    }
+      code: ""
+    };
     this.clickhandle = this.clickhandle.bind(this);
     this.handleChange = this.handleChange.bind(this);
   }
 
-  clickhandle = button =>{
-    console.log('klik masuk');
-
-    if(Button.title==="<"){
+  clickhandle = button => {
+    if (button === "<") {
+      console.log('masuk if <')
       this.backspace()
     }
-    if(button==="X"){
-      console.log('klik masuk(x)');
-      this.setState({
-        code: this.state.code + button
-      })
-    }
-    if(Button.title==="Print"){
-      this.print()
-    }
+
+    if (button === "Print") {
+      this.print();
+    } 
+    
     else{
       this.setState({
-        code: this.state.code + Button.title
-      })
+        code: this.state.code + button
+      });
     }
   };
 
-  backspace = ()=>{
-    this.setState({
-      code: this.state.code.slice(0,-1)
-    })
+  print = () => {
+    console.log("print masuk eko");
   };
 
-  reset = () =>{
-    console.log('reset masuk eko')
+  backspace = () => {
     this.setState({
-      code:""
-    })
+      code: this.state.code.slice(0, -1)
+    });
+  };
 
-  }
+  reset = () => {
+    console.log("reset masuk eko");
+    this.setState({
+      code: ""
+    });
+  };
   handleChange(event) {
-    this.setState({value: event.target.code});
+    this.setState({ value: event.target.code });
   }
-  render(){
-  return (
-    <>
-      <div className="bookcode-container">
-        <div className="code-head">Booking Code</div>
-        <center>
-          <div style={{flex:1,flexDirection:'row'}}>
-        <input className="input" placeholder="123456" value={this.state.code} onChange={this.handleChange} />
-          <Button title="X" clickhandle={this.clickhandle} />
-          </div>
-          <Numpad onClick={this.clickhandle} /></center>
-          <button name="X" className="ButtonSquare-whiteee" onClick={this.clickhandle}> X </button>
+  render() {
+    return (
+      <>
+        <div className="bookcode-container">
+          <div className="code-head">Booking Code</div>
+          <center>
+            <div style={{ flex: 1, flexDirection: "row" }}>
+              <input
+                className="input"
+                placeholder="123456"
+                value={this.state.code}
+              />
+              <button
+                name="X"
+                className="ButtonSquare-whiteee"
+                onClick={this.reset}
+              >
+                X
+              </button>
+            </div>
+            <Numpad onClick={this.clickhandle} />
+          </center>
+          <button
+            name="X"
+            className="ButtonSquare-whiteee"
+            onClick={this.backspace}
+          >
+            {" "}
+            X{" "}
+          </button>
 
-          <button name="1" className="ButtonSquare-Roundd" onClick={this.clickhandle}> X </button>
-            
-        
-      </div>
-    </>
-  );
+          <button
+            name="1"
+            className="ButtonSquare-Roundd"
+            onClick={this.clickhandle}
+          >
+            {" "}
+            X{" "}
+          </button>
+        </div>
+      </>
+    );
+  }
 }
-}
-
