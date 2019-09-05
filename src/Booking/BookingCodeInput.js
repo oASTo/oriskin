@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./Booking.css";
-import Button from "./Button";
 import Numpad from "./Numpad";
 
 export default class BookingCodeInput extends Component {
