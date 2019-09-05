@@ -14,24 +14,18 @@ export default class BookingCodeInput extends Component {
 
   clickhandle = button => {
     if (button === "<") {
-      console.log('masuk if <')
-      this.backspace()
-    }
-
-    else if (button === "Print") {
+      console.log("masuk if <");
+      this.backspace();
+    } else if (button === "Print") {
       this.print();
-    } 
-    
-    else{
+    } else {
       this.setState({
         code: this.state.code + button
       });
     }
   };
 
-  print = () => {
-    console.log("print ok kok");
-  };
+  print = () => {};
 
   backspace = () => {
     this.setState({
@@ -40,7 +34,6 @@ export default class BookingCodeInput extends Component {
   };
 
   reset = () => {
-    console.log("reset masuk eko");
     this.setState({
       code: ""
     });
@@ -70,23 +63,6 @@ export default class BookingCodeInput extends Component {
             </div>
             <Numpad onClick={this.clickhandle} />
           </center>
-          <button
-            name="X"
-            className="ButtonSquare-whiteee"
-            onClick={this.backspace}
-          >
-            {" "}
-            X{" "}
-          </button>
-
-          <button
-            name="1"
-            className="ButtonSquare-Roundd"
-            onClick={this.clickhandle}
-          >
-            {" "}
-            X{" "}
-          </button>
         </div>
       </>
     );
