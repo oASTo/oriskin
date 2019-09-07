@@ -1,18 +1,5 @@
-.Button {
-  align-content: center;
-  border-width: 3px;
-  border-radius: 100%;
-  border-color: white;
-  border-style: solid;
-  display: inline-block;
-  color: white;
-  padding: 3%;
-  margin-right: 15px;
-  margin-bottom: 15px;
-}
-
 .ButtonSquare-black {
-  font-size: 24px;
+  font-size: 2.5vw;
   padding: 3%;
   align-content: center;
   flex-wrap: wrap;
@@ -48,12 +35,12 @@
 }
 
 .input {
-  padding: 3%;
+  padding: 1vw;
   border-radius: 5%;
   border-color: white;
   border-width: 2px;
   border-style: solid;
-  font-size: 4vh;
+  font-size: 2vw;
   text-align: center;
   margin-right: 5px;
 }
@@ -63,8 +50,8 @@
 }
 
 .code-head {
-  padding: 5%;
-  font-size: 4vh;
+  padding-bottom: 0.2em;
+  font-size: 2vw;
 }
 
 .bookcode-container {
@@ -76,7 +63,7 @@
 }
 
 .ButtonSquare-whiteee {
-  padding: 3%;
+  padding: 1.3vw;
   align-content: center;
   border-width: 3px;
   border-color: white;
@@ -87,22 +74,26 @@
   margin-bottom: 15px;
   background-color: white;
   border-radius: 20%;
-  font-size: 20px;
+  font-size: 1.7vw;
   font-weight: bold;
 }
 
 .ButtonSquare-Roundd {
   align-content: center;
+  justify-content: center;
   border-width: 3px;
   border-radius: 100%;
   border-color: white;
   color: white;
   font-weight: bold;
-  font-size: 3vh;
+  font-size: 3vw;
   border-style: solid;
   display: inline-block;
   background-color: #e6c79b;
-  padding: 3%;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  padding-top: 1vw;
+  padding-bottom: 1vw;
   margin-right: 15px;
   margin-bottom: 15px;
 }
