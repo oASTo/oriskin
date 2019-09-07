@@ -9,7 +9,7 @@ function App() {
       <div className="App">
         <div className="desc-flex">
           <div className="Desc">
-            <img src={oriskinlogo} alt="oriskin logo" />
+            <img src={oriskinlogo} alt="oriskin logo" className="oriskin-logo" />
             <br />
             Use <br />
             the <b>SCANNER</b> <br />
